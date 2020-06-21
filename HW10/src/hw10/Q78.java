@@ -1,0 +1,15 @@
+package hw10;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+public class Q78 {
+    public static void main(String[] args) {
+        int count = 0;
+        LocalDate date = LocalDate.of(2017, Month.JANUARY, 1);
+        while (date.getMonth() != Month.APRIL)
+            date = date.minusMonths(1);
+        count++; //is executes one time
+        System.out.println(count);
+    }
+}
